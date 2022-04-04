@@ -1,0 +1,133 @@
+﻿@import './variables';
+
+.u-text-flex {
+    display: flex;
+}
+
+.u-text-flex-wrap {
+    flex-wrap: wrap;
+}
+
+.u-text-flex-space-between {
+    justify-content: space-between;
+}
+
+.u-text-flex-justify-center {
+    justify-content: center;
+}
+
+.u-text-flex-item-center {
+    align-items: center;
+}
+
+.u-text-flex-row {
+    flex-direction: row;
+}
+
+.u-text-flex-column {
+    flex-direction: column;
+}
+
+.u-text-uppercase {
+    text-transform: uppercase;
+}
+.u-text-block {
+    display: block;
+}
+
+.u-text--inline-block {
+    display: inline-block;
+}
+
+.u-text-bold {
+    font-weight: 700 !important;
+}
+
+.u-roboto-font-medium {
+    font-family: $Roboto-Medium;
+}
+.u-roboto-font-bold {
+    font-family: $Roboto-Bold;
+}
+
+.u-openSans-font-regular {
+    font-family: $OpenSans-Regular;
+}
+
+
+.u-brand-skin-text {
+    color: $lightblue;
+}
+
+.u-horizontal-pad-0 {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.u-horizontal-pad-15 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.u-horizontal-pad-45 {
+    padding-left: 45px;
+    padding-right: 45px;
+}
+.u-horizontal-pad-65 {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+
+.u-vertical-pad-15 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.u-bg-gray {
+    background-color: var(--bg-F6-color);
+}
+
+.u-gap-0 {
+    margin: 0 !important;
+}
+.u-gap-l-10 {
+    margin-left: 1rem !important;
+}
+.u-gap-l-20 {
+    margin-left: 2rem !important;
+}
+
+.u-gap-r-10 {
+    margin-right: 1rem !important;
+}
+
+.u-gap-r-20 {
+    margin-right: 2rem !important;
+}
+
+.u-gap-b-10 {
+    margin-bottom: 1rem !important;
+}
+.u-gap-b-20 {
+    margin-bottom: 2rem !important;
+}
+// Customize field width
+.u-width {
+    .u-sm-320 {
+        @include sm {
+            width: 32rem;
+        }
+    }
+}
+
+.u-content-md-pull-right {
+    @include sm {
+        float: right;
+    }
+}
+
+.u-text-primary {
+    color: var(--primary-blue-color) !important;
+}
+
+.u-no-border {
+    border: none !important;
+}

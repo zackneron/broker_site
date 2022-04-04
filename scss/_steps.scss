@@ -1,0 +1,15 @@
+﻿@import './_mixin';
+@import './_variables';
+
+.steps {
+    &__title {
+        font-family: $Roboto-Bold;
+    }
+
+    &__subtitle {
+    }
+
+    &__details-text {
+        margin-bottom: 4.5rem;
+    }
+}

@@ -1,0 +1,84 @@
+﻿.panel-default {
+    border-color: rgb(0 0 0 / 0%);
+    border-bottom-color: rebeccapurple;
+}
+
+.panel-border-bottom {
+    border-color: transparent;
+    border-bottom-color: $whiteD7;
+}
+.panel-default > .panel-heading {
+    background-color: transparent;
+    border-color: transparent;
+}
+.panel-default > .panel-heading + .panel-collapse > .panel-body {
+    border-top-color: transparent;
+}
+
+.panel-heading {
+    .accordion-toggle {
+        text-decoration: none;
+
+        &:after {
+            font-family: 'Glyphicons Halflings';
+            content: "\e260";
+            color: var(--primary-blue-color);
+        }
+
+        &.collapsed:after {
+            content: "\e259";
+        }
+    }
+}
+.panel-group-statement .panel {
+    border-radius: 8px;
+}
+
+.panel-content {
+    &__title {
+        font-family: $OpenSans-Bold;
+        width: 15rem;
+        display: inline-block;
+    }
+
+    &__description {
+    }
+
+    
+}
+
+.panel-target__content {
+    width: 100%;
+    .sub-title {
+        font-family: $OpenSans-Regular;
+        color: $gray9B;
+    }
+}
+
+.download {
+    height: 45px;
+    width: 45px;
+    display: inline-block;
+    padding: 8px;
+    border: 2px solid var(--primary-blue-color);
+    border-radius: 50%;
+
+    img {
+        width: 100%;
+    }
+}
+
+.panel-body--half-content {
+    @include sm {
+        width: 50%;
+    }
+}
+
+.panel-inline-text {
+    color: $gray66;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $whiteD7;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}

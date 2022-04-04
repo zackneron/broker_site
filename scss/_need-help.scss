@@ -1,0 +1,80 @@
+﻿@import './variables';
+
+.need-help {
+    padding: 7rem 0 7.5rem;
+
+    &__title {
+        color: $black39;
+        font-family: $Roboto-Light;
+        font-size: 3.8rem;
+        letter-spacing: -2px;
+        line-height: 3.8rem;
+        margin-bottom: 2rem;
+        display: inline-block;
+
+        @include sm {
+            font-size: 5.2rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__text {
+        display: block;
+        margin-bottom: .5rem;
+
+        @include sm {
+            display: inline-block;
+            margin-bottom: 0;
+        }
+    }
+
+    &__icon {
+        margin-right: 1.6rem;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+
+
+        .phone-details {
+            font-size: 1.4rem;
+        }
+
+        .trading-hours {
+            font-size: 1.3rem;
+            color: $gray9E;
+        }
+
+        a {
+            color: $black;
+            font-weight: 300;
+        }
+    }
+
+    .date {
+        position: relative;
+        padding-right: 1rem;
+        margin-right: 1rem;
+
+        &:after {
+            content: "";
+            height: auto;
+            width: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            background: $black;
+            right: 0;
+
+            @include sm {
+                width: 1px;
+            }
+        }
+    }
+
+    a[href*="mailto"] {
+        color: $black39;
+        font-weight: 400;
+    }
+}

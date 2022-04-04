@@ -1,0 +1,41 @@
+﻿@import './variables';
+
+.navbar-sm-fixed {
+    background-color: $white;
+    border-bottom: 1px solid #e5e5e5;
+
+    @include sm {
+        height: 7.6rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 950;
+    }
+}
+
+.sidenav-content {
+    background-color: var(--primary-blue-color);
+
+    &.sidenav-content-sm-fixed {
+        @include sm {
+            width: 25rem;
+            top: 6.2rem;
+            z-index: 800;
+            height: auto;
+            bottom: 0;
+            position: fixed;
+            left: 0;
+        }
+    }
+}
+
+
+.main-content-wrapper {
+    position: relative;
+    height: 100%;
+
+    @include sm {
+        margin-left: 25rem;
+    }
+}

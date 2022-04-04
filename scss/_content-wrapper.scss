@@ -1,0 +1,52 @@
+﻿.content-wrapper {
+    margin-top: -20rem;
+    position: relative;
+
+    @include md {
+        margin-top: -45rem;
+    }
+}
+
+.main-content-wrapper {
+    position: relative;
+
+    @include sm {
+        margin-left: 25rem;
+        height: 100%;
+    }
+}
+
+.main-content {
+    padding-bottom: 3rem;
+
+    @include sm {
+        padding-bottom: 15rem;
+    }
+
+    &__heading {
+        padding: 3.5rem 4rem 2.5rem;
+
+        & .headline-title--h1 {
+            font-family: $OpenSans-Light;
+        }
+    }
+
+    &__body {
+    }
+}
+
+.main-content-wrapper {
+    &.main-content-wrapper--inner-page {
+        @include sm {
+            margin-left: 0;
+            height: 100%;
+        }
+
+        .main-content {
+            @include sm {
+                padding-top: 0rem;
+            }
+        }
+    }
+}
+

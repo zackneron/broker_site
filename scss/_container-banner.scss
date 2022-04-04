@@ -1,0 +1,38 @@
+﻿.container-banner {
+    background-image: url("../images/oil_water@1x.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 25rem;
+    position: relative;
+
+    @include md {
+        min-height: 49.4rem;
+    }
+
+    .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: rgba($black, .2);
+    }
+
+    &.container-banner--base-inner-page {
+        min-height: 22rem;
+        position: relative;
+    }
+
+    &.container-banner--inner-page-default {
+        background-image: url("../images/banner-paper-boat.jpg");
+    }
+
+    &.container-banner--members {
+        background-image: url("../images/employers-banner.jpg");
+    }
+
+    &.container-banner--resources {
+        background-image: url("../images/banner-resources.jpg");
+    }
+}

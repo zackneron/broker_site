@@ -1,0 +1,160 @@
+﻿@import './variables';
+
+.search {
+
+    & > label {
+        font-weight: 300;
+        margin-bottom: 1rem;
+    }
+
+    &__group {
+        position: relative;
+    }
+
+    & .search__group {
+        margin-bottom: 2rem;
+
+        @media (max-width: 767px) {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &__label {
+        color: $blue;
+        font-size: 1.4rem;
+        position: absolute;
+        z-index: 1;
+        left: 1rem;
+        top: .5rem;
+        margin: 0;
+        font-weight: 300;
+    }
+
+    &__btn {
+        padding: 2rem 4.5rem;
+        width: 13.5rem;
+        outline: none;
+
+        &:focus,
+        &:active {
+            outline: none;
+        }
+    }
+
+    &__success-message {
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    .field-validation-error {
+        color: #dd4b39;
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    &__box {
+        border: 2px solid $grayE0;
+        box-shadow: none;
+        color: $black;
+        outline: none;
+        border-radius: 4px;
+        background: $white;
+        position: relative;
+        height: 6rem;
+
+        &:focus {
+            outline: none;
+            box-shadow: inset 0 0px 1px transparent, 0px 2px 4px rgba($grayBC,.5);
+            border-color: $grayBC;
+        }
+
+        &--error {
+            border: 1px solid $red;
+            box-shadow: 0 0 2px $red;
+        }
+
+        &--success {
+            border: 1px solid $lightgreen;
+            box-shadow: 0 0 2px $lightgreen;
+        }
+    }
+
+    &__icon {
+        border: 1px solid transparent;
+        background-color: transparent;
+        display: inline-block;
+        vertical-align: middle;
+        outline: 0;
+        cursor: pointer;
+        padding: 1rem;
+        position: absolute;
+        top: 50%;
+        right: 2rem;
+        transform: translateY(-50%);
+
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.form-label-group {
+    position: relative;
+
+    & input:-webkit-autofill ~ label {
+        padding-top: .5rem;
+        padding-bottom: .25rem;
+        font-size: 1.2rem;
+        top: 0;
+        left: 1rem;
+        font-weight: normal !important;
+    }
+
+    & input:not(:placeholder-shown) ~ label {
+        display: block;
+        padding-top: .5rem;
+        padding-bottom: .25rem;
+        font-size: 1.2rem;
+        color: $gray9E;
+        top: 0;
+        left: 1rem;
+        font-weight: normal !important;
+    }
+
+    & > label {
+        position: absolute;
+        top: 1.8rem;
+        left: 1.3rem;
+        display: none;
+        width: 100%;
+        margin-bottom: 0;
+        line-height: 1.5;
+        color: #9d9d9c;
+        pointer-events: none;
+        cursor: text;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+        transition: all .1s ease-in-out;
+        font-weight: normal !important;
+    }
+
+    & input:not(:placeholder-shown) {
+        padding-top: 1.25rem;
+        padding-bottom: .25rem;
+    }
+}
+
+.login-info-msg {
+    color: $lightblue;
+    font-size: 1.3rem;
+    margin-bottom: 3.5rem;
+}
+
+.column {
+    &__img {
+        margin-bottom: 4rem;
+    }
+    &__label {
+        margin-bottom: 3.5rem;
+    }
+}

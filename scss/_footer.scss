@@ -1,0 +1,97 @@
+﻿@import './variables';
+
+.footer {
+    background-color: $greyF1;
+    padding: 3.5rem 0;
+    font-size: 1.2rem;
+    width: 100%;
+    bottom: 0;
+
+
+    @include lg {
+        position: absolute;
+    }
+
+    &__logo {
+        text-align: center;
+
+        @include md {
+            margin-bottom: 0;
+            text-align: left;
+        }
+    }
+
+    &__description {
+        color: $gray9E;
+    }
+
+    &__need-help {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include md {
+            justify-content: flex-end;
+        }
+    }
+
+    &.footer--menu {
+        z-index: 900;
+        padding: 13px 0;
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        font-size: 1.3rem;
+
+        @include sm {
+            flex-direction: row;
+        }
+    }
+
+    &.footer-sm-fixed {
+        @include sm {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    }
+}
+
+.footer--menu {
+    &-link {
+        display: inline-block;
+        margin-bottom: 15px;
+
+        & .fa {
+            width: 32px;
+            height: 32px;
+        }
+
+        &__label {
+            display: block;
+            font-weight: 400;
+            text-transform: uppercase;
+            cursor: pointer;
+            line-height: 1.2em;
+            margin: 4px 0 0;
+        }
+    }
+}
+
+.footer--menu-target {
+    color: $lightblue;
+    display: block;
+
+    &.active {
+        color: #5F3653;
+    }
+
+    &:hover {
+        text-decoration: none;
+        .fa {
+            opacity: 0.8;
+        }
+    }
+}

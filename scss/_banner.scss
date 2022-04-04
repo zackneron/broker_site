@@ -1,0 +1,52 @@
+﻿@import './variables';
+
+.login-container {
+    max-width: 38.4rem;
+    margin: 0 1.5rem 4rem;
+
+    @include sm {
+        margin: 0 auto 14rem;
+    }
+}
+.banner-login {
+    padding-top: 14rem;
+    position: relative;
+    margin-bottom: 0;
+
+    &__intro {
+        padding: 0 1.5rem 4rem;
+    }
+
+    &__heading {
+        color: $white;
+        margin-bottom: 2.5rem;
+        margin-top: 0;
+        font-family: $Roboto-Light;
+        font-size: 2.5rem;
+
+        @include sm {
+            font-size: 4rem;
+        }
+    }
+
+    &__text {
+        color: $white;
+    }
+
+    &__column {
+        // margin: 0 1.5rem;
+        &:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .form-label-group {
+        font-size: 1.4rem;
+    }
+}
+
+.login-user {
+    & .login-user__text {
+        color: $gray9B !important;
+    }
+}

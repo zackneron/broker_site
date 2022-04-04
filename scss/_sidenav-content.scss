@@ -1,0 +1,121 @@
+﻿@import './variables';
+.sidenav-content {
+    &__heading {
+        background-color: var(--bg-F6-color);
+        color: $darkgray4A;
+        text-transform: uppercase;
+        padding: 2rem;
+        font-weight: 700;
+    }
+
+    &__list {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+
+        &-nav {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            @include sm {
+                position: static;
+                top: 0;
+                width: 25rem;
+            }
+        }
+    }
+}
+
+.sidenav-content__list {
+    &-target {
+        padding: 1.5rem 1rem 1.5rem 2rem;
+        font-size: 1.4rem;
+        color: $white;
+        line-height: 1.1rem;
+        display: block;
+        text-decoration: none;
+
+        &.active {
+            background-color: #0a5f9c;
+        }
+
+        &:hover,
+        &:focus{
+            text-decoration: none;
+            color: $white;
+            background: rgba($white,0.2);
+        }
+    }
+
+    &-item {
+        text-indent: 0;
+    }
+}
+
+.sidenav-content__tools {
+    margin-top: 2rem;
+
+    &-title {
+        color: $white;
+        border-bottom: 2px solid $white;
+        padding-bottom: 1.5rem;
+    }
+
+    &-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &-item {
+    }
+
+    &-target {
+        @extend .sidenav-content__list-target;
+        padding: 0 2rem;
+        position: relative;
+        margin-bottom: 1rem;
+        line-height: 2rem;
+        /*color: $white;
+        position: relative;
+        margin-bottom: 1rem;
+        display: inline-block;
+        padding: 0 2rem;
+
+        &.active {
+            background-color: #0a5f9c;
+        }
+
+        &:hover,
+        &:focus {
+            text-decoration: none;
+            color: $white;
+            background: rgba($white,0.2);
+        }*/
+    }
+
+    &-text {
+        display: block;
+        padding: 1rem;
+        position: relative;
+
+        &:before {
+            content: url('../images/fa-icons/document_24px@2x.png');
+            width: 1.2rem;
+            display: inline-block;
+            left: -12px;
+            top: -1.7rem;
+            position: absolute;
+            transform: scale(.4);
+
+            @include sm {
+                top: -3px;
+            }
+        }
+    }
+}
+
+.sidenav-content__tools-heading {
+    padding: 1rem 1.5rem;
+    margin-bottom: 1rem;
+}

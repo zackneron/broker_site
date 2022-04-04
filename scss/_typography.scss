@@ -1,0 +1,81 @@
+﻿/*THIS FILE DEFINES THE ALL   HEADLINES AND BODY STYLES*/
+
+.headline-title {
+    &--hero {
+        font-size: 4rem;
+        line-height: 48px;
+
+        @include md {
+            font-size: 6.4rem;
+            line-height: 72px;
+        }
+    }
+
+    &--h1 {
+        font-size: 2.4rem;
+        line-height: 32px;
+
+        @include md {
+            font-size: 4rem;
+            line-height: 48px;
+        }
+    }
+
+    &--h2 {
+        font-size: 2.2rem;
+        line-height: 28px;
+
+        @include md {
+            font-size: 2.8rem;
+            line-height: 32px;
+        }
+    }
+
+    &--h3 {
+        font-size: 2rem;
+        line-height: 24px;
+
+        @include md {
+            font-size: 2.4rem;
+            line-height: 28px;
+        }
+    }
+
+    &--h4 {
+        font-size: 1.6rem;
+        line-height: 20px;
+
+        @include md {
+            font-size: 1.8rem;
+            line-height: 24px;
+        }
+    }
+
+    &--sub1 {
+        font-size: 3.2rem;
+        line-height: 40px;
+        letter-spacing: -0.8px;
+    }
+}
+
+.body-text {
+    &-b1 {
+        font-size: 2rem;
+        line-height: 32px;
+    }
+
+    &-b2 {
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+
+    &-b3 {
+        font-size: 1.4rem;
+        line-height: 20px;
+    }
+
+    &-b4 {
+        font-size: 1.2rem;
+        line-height: 16px;
+    }
+}

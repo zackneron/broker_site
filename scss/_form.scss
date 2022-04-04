@@ -1,0 +1,73 @@
+﻿@import 'variables';
+
+.form-group {
+    margin-right: 1rem;
+
+    .form-control {
+        border-radius: 1px;
+        height: 4rem;
+        background-color: #F0F0F0;
+        outline: none;
+        padding: 11px 15px;
+
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+}
+
+
+.radio {
+    label {
+        disabled {
+            min-height: 2rem;
+            padding-left: 2rem;
+            margin-bottom: 0;
+            font-weight: normal;
+            color: #d3d3d3;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.form-control[disabled] {
+    opacity: 0.4;
+}
+
+.custom-select {
+    &::-ms-expand {
+        display: none;
+    }
+}
+
+input {
+
+}
+
+textarea {
+    resize: none;
+}
+
+select {
+    &.form-control {
+        padding-top: 4px;
+        padding-bottom: 4px;
+        width: 11.5rem;
+    }
+
+    &.filter_control--fluid {
+        width: 100%;
+    }
+}
+
+.select {
+    &--all {
+        margin: 2rem 0;
+    }
+}
+
+textarea {
+    resize: none;
+    min-height: 135px;
+}

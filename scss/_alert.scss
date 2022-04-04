@@ -1,0 +1,64 @@
+@import 'variables';
+
+.toast-close-button {
+    &:hover {
+        color: $gray66;
+    }
+}
+
+.alert-caught {
+    background-color: $whiteE3;
+    padding: 2rem 1rem;
+    color: $darkblue;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+
+    &--home-page {
+        position: relative;
+    }
+
+    &__message {
+        font-size: 14px;
+
+        & > span {
+            display: inline-block;
+        }
+    } 
+
+    &__thumb {
+        margin-right: 1rem;
+
+        img {
+            height: 2rem;
+        }
+    }
+
+    &__content {
+        line-height: 14px;
+        margin-right: .5rem;
+    }
+
+    &__more-info {
+        color: $darkblue;
+
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        color: #666666;
+        font-size: 25px;
+        font-weight: 300;
+        top: 0;
+
+        &:hover,
+        &:focus {
+            outline: none;
+        }
+    }
+}

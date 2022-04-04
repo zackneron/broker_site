@@ -1,0 +1,126 @@
+﻿@import './variables';
+
+.navbar-brand {
+    @include sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.navbar-default {
+    margin-bottom: 0;
+
+    @include sm {
+        padding-top: 1rem;
+    }
+}
+
+.table > thead > tr > th {
+    border-top: 1px solid transparent;
+    border-bottom: none;
+    color: $darkgray4A;
+    font-size: 1.4rem;
+    font-family: $OpenSans-Bold;
+    line-height: 1.8;
+}
+
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td {
+    padding: 8px;
+    line-height: 1.8;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+    color: $gray66;
+    font-size: 1.3rem;
+}
+
+.table > tbody > tr > th, 
+.table > tfoot > tr > th,  
+.table > thead > tr > th {
+    padding: 1.5rem .8rem;
+}
+
+input[type=checkbox], input[type=radio] {
+    width: 2rem;
+    height: 2rem;
+}
+
+.btn-default {
+    color: #333;
+    background-color: transparent;
+    border-color: transparent;
+
+    &:focus,
+    &:hover {
+        background-color: transparent;
+        border-color: transparent;
+    }
+}
+
+.nav-tabs {
+    border-bottom: 1px solid transparent;
+
+    & > li {
+        & > a {
+            background: $darkgray4A;
+            color: $white;
+            transition: all .5s ease;
+            padding: 1rem 7rem;
+        }
+
+        &.active {
+            & > a {
+                color: $white;
+                background-color: var(--primary-blue-color);
+                border: 1px solid transparent;
+                border-bottom-color: transparent;
+
+                &:hover,
+                &:focus {
+                    color: $white;
+                    background-color: var(--primary-blue-color);
+                    border: 1px solid transparent;
+                    border-bottom-color: transparent;
+                }
+            }
+        }
+    }
+}
+
+.nav {
+    & > li {
+        a {
+            &:hover,
+            &:focus {
+                text-decoration: none;
+                border-color: transparent;
+            }
+
+            &:hover {
+                background-color: var(--primary-blue-color);
+            }
+        }
+    }
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    
+}
+.nav > li > a:hover {
+    background-color: var(--primary-blue-color);
+}
+
+@media (min-width: 768px) {
+    .form-inline .form-group {
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 814px) {
+    .form-inline .form-group {
+        margin-bottom: 0;
+    }
+}

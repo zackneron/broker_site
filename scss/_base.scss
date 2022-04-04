@@ -1,0 +1,100 @@
+﻿@import './variables';
+
+html {
+    font-size: 62.5%; // 10/16
+    min-height: 100%;
+    letter-spacing: -.2px;
+}
+
+// STYLES FROM EB MEMBER
+
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus::-ms-value {
+    background: none;
+    color: #9b9b9b;
+}
+
+html,
+body {
+    font-family: $OpenSans-Regular;
+    margin: 0;
+    padding: 0;
+    color: $gray79;
+}
+
+body {
+    min-height: 100%;
+    background-color: $white;
+    font-size: var(--base-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    //color: $darkgray4A; 
+    font-family: $OpenSans-Bold;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 18px;
+    letter-spacing: -.4px;
+    margin-bottom: 1.5rem;
+}
+
+h4 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--primary-blue-color);
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+h1 dd, h2 dd, h3 dd, h4 dd, h5 dd {
+    display: block;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+a[disabled] {
+    pointer-events: none;
+}
+
+a {
+    &.disabled {
+        &:hover {
+            cursor: not-allowed;
+        }
+    }
+}
+
+.tab-link[disabled] {
+    filter: opacity(0.4);
+}

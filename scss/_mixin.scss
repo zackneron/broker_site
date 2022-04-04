@@ -1,0 +1,47 @@
+﻿@mixin xs {
+    @media (min-width: 0) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: 768px) {
+        @content;
+    } 
+}
+
+@mixin md {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xlg {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin placeholder-text {
+    ::-webkit-input-placeholder {
+        @content
+    }
+
+    :-moz-placeholder {
+        @content
+    }
+
+    ::-moz-placeholder {
+        @content
+    }
+
+    :-ms-input-placeholder {
+        @content
+    }
+}

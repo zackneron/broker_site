@@ -1,0 +1,8 @@
+﻿.hero-container {
+    margin-bottom: 4.4rem;
+
+    & .hero-container__heading {
+        color: $white;
+        font-family: $Roboto-Light;
+    }
+}

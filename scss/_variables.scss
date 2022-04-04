@@ -1,0 +1,140 @@
+﻿@import 'mixin';
+
+// FONT SIZE
+$default-size: 1.6rem;
+:root {
+    --base-size: 1.6rem;
+    --primary-blue-color: #0075c9;
+    --bg-F6-color: #f6f6f6;
+}
+
+// FONTS DECLARATION
+
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Open Sans Light';
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/OpenSans-Light-webfont.ttf') format('truetype');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Open Sans Bold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Roboto Regular';
+    src: url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+}@font-face {
+    font-family: 'Roboto Light';
+    src: url('../fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: 'Roboto Medium';
+    src: url('../fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Roboto Bold';
+    src: url('../fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+$Roboto-Regular: "Roboto Regular", Helvetica, Arial, sans-serif;
+$Roboto-Light: "Roboto Light", Helvetica, Arial, sans-serif;
+$Roboto-Medium: "Roboto Medium", Helvetica, Arial, sans-serif;
+$Roboto-Bold: "Roboto Bold", Helvetica, Arial, sans-serif;
+
+$OpenSans-Regular: "Open Sans Regular", Helvetica, Arial, sans-serif;
+$OpenSans-Light: "Open Sans Light", Helvetica, Arial, sans-serif;
+$OpenSans-Bold: "Open Sans Bold", Helvetica, Arial, sans-serif;
+$OpenSans-Semibold: "Open Sans Semibold", Helvetica, Arial, sans-serif;
+
+// COLORS
+$white: #ffffff;
+$whiteF0: #f0f0f0;
+$greyF1: #f1f1f1;
+$blue: #5493BD;
+$black: #000000;
+$black39: #393939;
+
+$whiteF0F0: #f0f0f0;
+$whiteD2: #fff3d2;
+$whiteE1: #DCE0E6;
+$whiteDD: #dddddd;
+$whiteD7: #d7d7d7;
+$whiteE5: #e5e5e5;
+
+$darkblue: #333e48;
+$lightblue: #0075C9;
+$lightenblue: #0b5fbd;
+$lighterblue: #7cb5ec;
+
+$red: #d0021b;
+
+$gray79: #797979;
+$gray66: #666666;
+$lightgray: #cccccc;
+$gray9B: #9b9b9b;
+$grayE0: #E0E4E9;
+$gray9E: #9EA2A0;
+$grayBC: #BCC4CE;
+$gray71: #717983;
+$gray46: #464E58;
+
+$green: #1CAE36;
+$lightgreen: #67baaf;
+
+$yellow: #F5B819;
+$orange: #f7a35b;
+$darkorange: #F79632;
+
+$whiteF0: #fff0f0;
+$whiteF0F0: #f0f0f0;
+$whiteD2: #fff3d2;
+$whiteE1: #e1e1e1;
+$whiteDD: #dddddd;
+$whiteE5: #e5e5e5;
+$whiteDC: #DCE0E6;
+$whiteE3: #E3E5E4;
+$greyF1: #f1f1f1;
+$lightwhiteF5: #F5F7FA;
+
+$darkblue: #333e48;
+$darkblue5A: #5A6872;
+$lightblue: #0075C9;
+$lightenblue: #0b5fbd;
+$lighterblue: #7cb5ec;
+$blue54: #5493BD;
+$red: #d0021b;
+
+$gray79: #797979;
+$gray66: #666666;
+$black25: #252D34;
+$black2C: #2C2C2C;
+$gray9E: #9EA2A0;
+$lightgray: #cccccc;
+$lightC0: #C0C0C0;
+$gray9B:#9b9b9b;
+
+$green: #1CAE36;
+$lightgreen: #67baaf;
+$lightgreen76: #76C2B6;
+$yellow: #F5B819;
+$orange: #f7a35b;
+$orange: #F2A900;
+$darkorange: #F79632;
+
+$darkgray: #4C5256;
+$darkgray4A: #4A4A4A;
